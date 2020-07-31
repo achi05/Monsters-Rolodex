@@ -1,7 +1,22 @@
 .card-list {
-  width: 85vh;
-  margin: 0 auto;
+  margin: 50px auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
+  gap: 40px;
+  max-width: 1200px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+  background-color: #156666;
+  color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #20d3d3;
+  transform: translateZ(0);
+  transition: transform 350ms ease-in-out;
+  min-width: 220px;
+  max-width: 280px;
+  justify-self: center;
 }
